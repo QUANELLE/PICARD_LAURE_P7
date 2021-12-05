@@ -1,0 +1,11 @@
+{
+  "name": "picard_laure_p7",
+  "version": "1.0.0",
+  "description": "projet P7",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laure PICARD",
+  "license": "ISC"
+}
