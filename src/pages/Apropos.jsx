@@ -1,7 +1,12 @@
 import React from 'react'
+import '../style/apropos.css'
 
 export default function Apropos() {
   return (
-    <div>Apropos</div>
+    <div className='page-container'>
+      <div className="a-propos">
+      A propos
+      </div>
+      </div>
   )
 }

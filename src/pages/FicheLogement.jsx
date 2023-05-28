@@ -1,7 +1,13 @@
 import React from 'react'
+import '../style/ficheLogement.css'
 
 export default function FicheLogement() {
   return (
-    <div>FicheLogement</div>
+    <div className='page-container'>
+     <div className="fiche-logement">
+      
+      FicheLogement</div>
+      </div> 
+    
   )
 }

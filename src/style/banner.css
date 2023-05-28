@@ -1,0 +1,20 @@
+.banner {
+    border: 1px solid green;
+    color: green;
+    background-color: #F6F6F6;
+    background: url('/src/assets/home.png');
+    /* background:url({picture}); */
+    background-size:cover;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 142.6%;
+
+/* or 68px */
+display: flex;
+align-items: flex-end;
+justify-content: center;
+
+color: #FFFFFF;
+}
