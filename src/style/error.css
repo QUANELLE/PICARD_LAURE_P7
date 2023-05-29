@@ -1,24 +1,29 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(88, 95, 108);     
+    /* justify-content: space-evenly;  */
+    /* margin: auto; */
+    padding: 20px; 
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+transform: translate(-50%,-50%); */
 
+}
 .chiffre {    
 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-/* font-size: 288px; */
-font-size: 16rem;
-line-height: 142.6%;
-/* or 411px */
+font-size: 12rem;
 color: #FF6060;
 }
 .text-erreur {
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-/* font-size: 36px; */
 font-size: 2rem;
-/* line-height: 142.6%; */
-line-height: 51px;
-/* or 51px */
 color: #FF6060;
 }
 
@@ -27,10 +32,6 @@ margin-top: 40px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-/* font-size: 18px; */
-/* font-size: 1rem; */
-line-height: 142.6%;
-/* identical to box height, or 26px */
 text-decoration-line: underline;
 color: #FF6060;
 }
