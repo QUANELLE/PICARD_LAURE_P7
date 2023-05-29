@@ -9,8 +9,8 @@ import FicheLogement from './pages/FicheLogement';
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Router>
+      <Header/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/apropos' element={<Apropos />} />
