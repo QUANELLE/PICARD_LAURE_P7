@@ -9,7 +9,7 @@ export default function Header() {
     <div className='header'>
       
 
-  <img className='logo' src="./Logo.png" alt="" />
+  <img className='logo' src="./Logo.png" alt="logo" />
     <Navigation/>
 
       

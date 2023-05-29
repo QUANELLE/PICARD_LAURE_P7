@@ -1,18 +1,16 @@
 .header { 
   
 margin-bottom: 10px;
-padding: 20px 30px;
+padding: 10px ;
 display: flex;
 justify-content: space-between;
 border: 2px solid black;
 }
 
-/* .nav {    
-    border: 2px solid black;
-    background-color: coral;
-    font-size: 30px;    
-} */
 
-/* .logo {
-    border: 2px solid black; 
-} */
+
+.logo {
+    /* border: 2px solid black;  */
+    max-width: 30%;
+    object-fit: contain;
+}

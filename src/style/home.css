@@ -1,13 +1,14 @@
 .home {
     /* font-size: 150px; */
     color: blueviolet;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    flex-grow: 1;
 }
 
   
