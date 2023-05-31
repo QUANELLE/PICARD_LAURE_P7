@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 import '../style/banner.css'
 import picture from '../utils/pictures'
 import styled from 'styled-components';
@@ -8,7 +9,7 @@ import styled from 'styled-components';
 //     background: url('/src/assets/home.png');
 //    background:url(
 //       ${({ adress }) =>
-//     adress === '/' ? picture.homeImg : picture.aproposImg};)
+//     adress === '/' ? picture.homeImg : picture.AboutIMG};)
     
 //     background-size:cover;
 //     font-family: 'Montserrat';
@@ -26,10 +27,15 @@ import styled from 'styled-components';
 // }
 // `
 
-export default function Banner({image}) {
-  
+export default function Banner() {
+  // let pageName = useParams()
+  // console.log(pageName)
   return (
-    <div className='banner'>Chez vous, partout et ailleurs</div>
+    <div className='banner banner-home'>
+    {/* <div > */}
+      Chez vous, partout et ailleurs
+      
+      </div>
     // <Bannerstyle>Chez vous, partout et ailleurs</Bannerstyle>
   )
 }

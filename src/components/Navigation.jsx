@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <nav className="navigation">
         <Link to='/' className='text-nav'>Accueil</Link>
-        <NavLink to='/apropos'className='text-nav'> A Propos</NavLink>
+        <NavLink to='/about'className='text-nav'> A Propos</NavLink>
 
     </nav>
   )

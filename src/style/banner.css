@@ -4,7 +4,7 @@
     padding: 25px;
     /* background-color: #F6F6F6; */
     
-    background: url('/src/assets/home.png');
+    /* background: url('/src/assets/home.png'); */
     /* background:url({picture}); */
     background-size:cover;
     font-family: 'Montserrat';
@@ -18,5 +18,10 @@ display: flex;
 justify-content: center;
 color: #FFFFFF;
 
-
+}
+.banner-home{
+    background-image: url('/src/assets/home.png');
+}
+.banner-about{
+    background-image: url('/src/assets/AboutIMG.png');
 }
