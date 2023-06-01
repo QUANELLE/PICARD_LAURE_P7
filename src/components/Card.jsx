@@ -1,9 +1,10 @@
 import React from 'react'
 import '../style/card.css'
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 
-export default function Card({title,cover}) {
+export default function Card({id,title,cover}) {
     const StyleCard = styled.div`
     background:#FF6060 linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%)center/cover;
     background-image: url(${cover});
@@ -26,10 +27,14 @@ export default function Card({title,cover}) {
     min-width:30%;
     
     `
-     
+   const navigate= useNavigate() 
+   const path = `/appart/${id}`
+   
+   console.log(path); 
+   console.log(id); 
   return (
    
-    <StyleCard >
+    <StyleCard onClick={()=>navigate(path)} >
 {title}
         
         {/* <p> {title} </p> */}

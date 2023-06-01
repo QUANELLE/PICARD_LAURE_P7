@@ -16,7 +16,7 @@ color: #FFFFFF;
 
 }
 .banner-home{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('/src/assets/home.png');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('/src/assets/home.png');  
     
 }
 .banner-about{

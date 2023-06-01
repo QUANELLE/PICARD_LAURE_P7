@@ -8,8 +8,9 @@ export default function Gallery(title,id,cover) {
     <div className='gallery'>
       {logements.map(logement=>
 
-    <Card
+    <Card 
     key={logement.id}
+    id={logement.id}
     title={logement.title}
 cover={logement.cover}
     />
