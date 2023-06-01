@@ -17,6 +17,7 @@ color: #FFFFFF;
 }
 .banner-home{
     background-image: url('/src/assets/home.png');
+    
 }
 .banner-about{
     background-image: url('/src/assets/AboutIMG.png');

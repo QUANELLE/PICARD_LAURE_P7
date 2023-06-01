@@ -23,6 +23,7 @@ export default function Card({title,cover}) {
     color: #FFFFFF;
     position:relative;
     padding: 5px;
+    min-width:30%;
     
     `
      
