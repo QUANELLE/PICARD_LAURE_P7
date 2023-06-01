@@ -1,41 +1,19 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import '../style/banner.css'
-import picture from '../utils/pictures'
-import styled from 'styled-components';
 
-// const Bannerstyle = styled.div`
-// background-color: #F6F6F6;
-//     background: url('/src/assets/home.png');
-//    background:url(
-//       ${({ adress }) =>
-//     adress === '/' ? picture.homeImg : picture.AboutIMG};)
-    
-//     background-size:cover;
-//     font-family: 'Montserrat';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 48px;
-// line-height: 142.6%;
 
-// /* or 68px */
-// display: flex;
-// align-items: flex-end;
-// justify-content: center;
+export default function Banner({bgc, txt}) {
+  const bgcStyle = bgc==='homeStyle'?'banner banner-home':'banner banner-about'
+  const textStyle= txt=== 'aboutText'?'text-about':''
+    return (
+    <div className={bgcStyle}>
+    <span  className={textStyle}>
 
-// color: #FFFFFF;
-// }
-// `
-
-export default function Banner() {
-  // let pageName = useParams()
-  // console.log(pageName)
-  return (
-    <div className='banner banner-home'>
-    {/* <div > */}
       Chez vous, partout et ailleurs
+    </span>
       
       </div>
-    // <Bannerstyle>Chez vous, partout et ailleurs</Bannerstyle>
+    
   )
 }

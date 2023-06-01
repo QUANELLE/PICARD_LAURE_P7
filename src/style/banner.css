@@ -2,17 +2,13 @@
     /* border: 2px solid green; */
     border-radius: 15px;
     padding: 25px;
-    /* background-color: #F6F6F6; */
     
-    /* background: url('/src/assets/home.png'); */
-    /* background:url({picture}); */
     background-size:cover;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 48px;
-line-height: 142.6%;
-
+min-height: 15vh;
 max-width: 1500px;
 display: flex;
 justify-content: center;
@@ -24,4 +20,8 @@ color: #FFFFFF;
 }
 .banner-about{
     background-image: url('/src/assets/AboutIMG.png');
+    
+}
+.text-about{
+    display: none;
 }

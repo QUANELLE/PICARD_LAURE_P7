@@ -6,7 +6,6 @@ import logements from '../assets/logements.json'
 export default function Gallery(title,id,cover) {
   return (
     <div className='gallery'>
-      {/* Gallery */}
       {logements.map(logement=>
 
     <Card
