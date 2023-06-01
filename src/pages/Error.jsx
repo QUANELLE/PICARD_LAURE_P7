@@ -1,8 +1,10 @@
 import React from 'react'
 import '../style/error.css'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Error() {
+  const navigate= useNavigate()
   return (
     <>
     
@@ -10,7 +12,7 @@ export default function Error() {
     <div className='error'>
     <div className='chiffre'>404</div>
     <div className="text-erreur">Oups! La page que vous demandez n'existe pas.</div>
-    <div className="text-retour-accueil">Retourner sur la page d’accueil</div>
+    <button onClick={()=>navigate('/')}  className="text-retour-accueil">Retourner sur la page d’accueil</button>
     </div>
     </div>
     

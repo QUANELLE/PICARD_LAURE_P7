@@ -5,16 +5,16 @@ import Error from './pages/Error';
 import Footer from './components/Footer'
 import Header from './components/Header';
 import About from './pages/About';
-import FicheLogement from './pages/FicheLogement';
+import Appart from './pages/Appart';
 function App() {
   return (
-    <div className="App">
+    <div className="App">      
       <Router>
       <Header/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/fichelogement' element={<FicheLogement />} />
+          <Route path='/appart/:id' element={<Appart />} />
           <Route path='*' element={<Error />} />
 
         </Routes>
