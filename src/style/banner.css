@@ -2,7 +2,7 @@
     /* border: 2px solid green; */
     border-radius: 15px;
     padding: 25px;
-    
+    text-align: center;
     background-size:cover;
     font-family: 'Montserrat';
 font-style: normal;
@@ -16,12 +16,12 @@ color: #FFFFFF;
 
 }
 .banner-home{
-    background-image: url('/src/assets/home.png');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('/src/assets/home.png');
     
 }
 .banner-about{
     background-image: url('/src/assets/AboutIMG.png');
-    
+    width: 80vw;
 }
 .text-about{
     display: none;

@@ -1,5 +1,5 @@
 .navigation {    
-    /* border: 2px solid coral; */
+    border: 2px solid coral;
     /* font-size: 30px;  */
     /* padding: 50px; */
     width: 30%;
@@ -15,7 +15,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 142.6%;
     color: #FF6060;
-
+text-decoration: none;
+}
+.navigation a.active{
+    text-decoration: underline;
 }
