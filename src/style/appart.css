@@ -1,5 +1,58 @@
-.fiche-logement {
+.appart {
     border: solid 1px rgb(82, 3, 15);
     font-size: xx-large;
     color: darkred;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.tags{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+}
+.logtTest {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.appart-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+.appart-tittle{
+    max-width: 60%;
+}
+.tags div{
+    display: flex;
+    align-items: center;
+    border-radius: 30%;
+    background-color: #FF6060;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #FFFFFF;
+
+}
+.appart-host{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.host img{
+    border-radius: 50%;
+    padding: 20px;
 }

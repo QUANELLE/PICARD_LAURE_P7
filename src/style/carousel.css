@@ -1,0 +1,15 @@
+.carousel{
+    border: solid 1px rgb(255, 64, 0);
+    color:rgb(255, 64, 0) ;
+  /* height: 400px;    */
+width: 80%;
+/* height: 40vh; */
+}
+.slider{
+    background-color: #fff;
+}
+
+.carousel img{
+    width: 100%;
+    object-fit: cover;
+}
