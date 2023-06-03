@@ -1,14 +1,8 @@
 .home {
-    /* border: 2px solid blueviolet; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    flex-grow: 1;
-    background: #FFFFFF;
-
+  /* border: 2px solid blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 10% 10%;
+  background: var(--text-color);
 }
-
-  

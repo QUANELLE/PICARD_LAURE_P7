@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
 }
-/* body {
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  
-} */
+:root{
+  --primary-color:#ff6060;
+  --text-color:#FFFFFF;
+}
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

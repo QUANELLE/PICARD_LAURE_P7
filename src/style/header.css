@@ -1,16 +1,13 @@
-.header { 
-  
-margin-bottom: 10px;
-padding: 10px ;
-display: flex;
-justify-content: space-between;
-border: 2px solid black;
+.header {
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
 }
 
-
-
 .logo {
-    /* border: 2px solid black;  */
-    max-width: 30%;
-    object-fit: contain;
+  /* border: 2px solid black;  */
+  max-width: 30%;
+  object-fit: contain;
 }

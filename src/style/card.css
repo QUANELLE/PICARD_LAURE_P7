@@ -1,16 +1,12 @@
 .card {
-  background: #ff6060
+  background: var(--primary-color)
     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
   min-width: 100px;
   min-height: 100px;
   display: flex;
-  /* align-items: flex-end; */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
-  color: #ffffff;
+  color: var(--text-color);
   max-width: 200px;
   max-height: 200px;
   padding: 15px;

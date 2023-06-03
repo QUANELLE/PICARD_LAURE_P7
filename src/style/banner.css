@@ -1,28 +1,41 @@
 .banner {
-    /* border: 2px solid green; */
-    border-radius: 15px;
-    padding: 25px;
-    text-align: center;
-    background-size:cover;
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-min-height: 15vh;
-max-width: 1500px;
-display: flex;
-justify-content: center;
-color: #FFFFFF;
-
+  /* border: 2px solid green; */
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  background-size: cover;
+  align-items: center;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 3rem;
 }
-.banner-home{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('/src/assets/home.png');  
-    
+.banner-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("/src/assets/home.png");
 }
-.banner-about{
-    background-image: url('/src/assets/AboutIMG.png');
-    width: 80vw;
+.banner-about {
+  background-image: url("/src/assets/AboutIMG.png");
+  width: 80vw;
 }
-.text-about{
-    display: none;
+.text-about {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .banner {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .banner {
+    font-size: 2rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .banner {
+    padding: 5px;
+    font-size: 1.5rem;
+  }
 }

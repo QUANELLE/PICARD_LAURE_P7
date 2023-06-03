@@ -1,56 +1,99 @@
 .appart {
-    /* border: solid 1px rgb(82, 3, 15); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* border: solid 1px rgb(82, 3, 15); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tags{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    gap: 10px;
+.tags {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
 }
-.logtTest {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-.appart-infos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-left: 10px;
 
-
+.appart-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
 }
-.appart-tittle{
-    max-width: 60%;
+.appart-tittle {
+  max-width: 60%;
+  color: var(--primary-color);
+  font-size: 1.5rem;
 }
-.tags div{
-    display: flex;
-    align-items: center;
-    border-radius: 10%;
-    background-color: #FF6060;
-    font-size: 1.5rem;
-    padding: 5px;
-    color: #FFFFFF;
-
+.tags div {
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 5px;
+  color: var(--text-color);
+  font-size: small;
+  margin-top: 5px;
 }
-.appart-host{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;
+.appart-host {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
     justify-content: center; */
 }
-.host{
-    display: flex;
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.host img {
+  border-radius: 50%;
+  padding: 20px;
+}
+@media (max-width:750px) {
+  .appart-infos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .appart-host{
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    width: 100%;
+  }
+  .appart-tittle{
+    max-width: 100%;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .tags{
+    justify-content: flex-start;
+  }
 }
-.host img{
-    border-radius: 50%;
-    padding: 20px;
+
+@media (max-width: 500px) {
+  .host img{
+    width: 50%;
+  }
+  .host{
+    justify-content: flex-end;
+  }
+  .rating img{
+    width: 15%;
+  }
+}
+@media (max-width: 400px){
+  .tags div{
+    font-size: 0.5rem;
+  }
+  .host img{
+    min-width: 80px;
+  }
+  .host{
+    font-size: 1rem;
+    max-width: 60%;
+    padding: 0;
+  }
 }
