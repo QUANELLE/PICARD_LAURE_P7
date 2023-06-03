@@ -1,4 +1,55 @@
 .collapse{
-    border: 1px solid blue;
-    color: blue;
+    /* border: 2px solid blue; */
+    color: #FFFFFF;
+    width: 40vw;
+    /* height: 200px; */
+    
+
+display: flex;
+flex-direction: column;
+}
+.collapse-tittle{
+    background: #FF6060;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    /* border: 1px solid green; */
+
+}
+.collapse-tittle button{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FF6060;
+    border: none;
+    margin: 5px;
+}
+.transformation-fleche{
+    
+transform: rotate(180deg);
+}
+.collapse-text{
+    font-size: small;
+    background-color: #fff;
+    color: #FF6060;
+    flex-grow: 1;
+}
+.collapse-text-open{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #F6F6F6;
+    padding: 15px;
+    text-align: left;
+
+}
+.collapse-text-closed{
+    display: none;
+}
+.collapses{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }

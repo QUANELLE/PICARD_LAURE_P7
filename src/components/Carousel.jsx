@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
-import '../style/carousel.css'
+import React, { useState } from "react";
+import "../style/carousel.css";
 
-export default function Carousel({pictures,cover}) {
-  const [currentIndex, setCurrentIndex]=useState(0)
+export default function Carousel({ pictures, cover }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className='carousel'>
-    <div >
+    <div className="carousel">
       <img src={`${cover}`} alt="" />
-      </div>
-    
-    
     </div>
-  )
+  );
 }
