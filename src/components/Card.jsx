@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 export default function Card({ id, title, cover }) {
+  // création d'un styled Component pour intégrer le background-image dynamiquement
   const StyleCard = styled.div`
     background: #ff6060
       linear-gradient(
@@ -26,6 +27,8 @@ export default function Card({ id, title, cover }) {
     padding: 5px;
     min-width: 30%;
   `;
+  
+  // redirection vers la page de l'appartement cliqué
   const navigate = useNavigate();
   const path = `/appart/${id}`;
 

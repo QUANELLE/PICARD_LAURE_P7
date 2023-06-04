@@ -30,3 +30,11 @@
 .fleche-none{
   display: none;
 }
+.compteur{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}

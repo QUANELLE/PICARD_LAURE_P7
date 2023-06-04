@@ -6,12 +6,7 @@ export default function Carousel({ pictures}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const nbPictures= pictures.length
   console.log('nbPictures:', nbPictures);
-  // Disparition des fléches si une seule img
-  // const styleFleches ="fleche" 
-  // const Fleche ="fleche" 
-  // const FlecheNone ="fleche-none" 
-  // const styleFleches =()=>{(nbPictures!= 0? "fleche":"fleche-none")} 
-// function styleFleches(){nbPictures!= 0? "fleche":"fleche-none"}
+  
   // fonction 'image précédente'
   const prevImg = () => {currentIndex!= 0 ?
     setCurrentIndex(currentIndex-1): setCurrentIndex(nbPictures-1)
@@ -34,7 +29,7 @@ export default function Carousel({ pictures}) {
     <StyleCarousel>
       <img
         onClick={prevImg}
-        // className={`${styleFleches} fleche-gauche`}
+        // Disparition des fléches si une seule img
         className={`${nbPictures!= 1? "fleche":"fleche-none"} fleche-gauche`} 
         src="/flecheGauche.png"
         alt="retour image précédente"
@@ -45,6 +40,7 @@ export default function Carousel({ pictures}) {
         src="/flecheDroite.png"
         alt="aller image suivante"
       />
+      <div className="compteur">{currentIndex+1}/{nbPictures} </div>
     </StyleCarousel>
   );
 }

@@ -6,13 +6,13 @@ import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
 
 export default function Appart() {
+  // Récupération du choix de l'appartement
   const param = useParams();
-  // console.log(param);
   let currentAppart = logements.find((logement) => param.id === logement.id);
-  // console.log(currentAppart);
-  // console.log('pictures:',currentAppart.pictures);
-  const listPictures= currentAppart.pictures
-  console.log('listPictures:', listPictures);
+
+  // Mise en constante des différentes listes de données utiles
+  const listPictures = currentAppart.pictures;
+  // console.log('listPictures:', listPictures);
   const listTags = currentAppart.tags.map((tag, index) => (
     <div key={index}>{tag}</div>
   ));
@@ -36,22 +36,20 @@ export default function Appart() {
           </div>
           <div className="appart-host">
             <div className="host">
-             <div className="host-name">
-
-              {currentAppart.host.name}
-             </div>
+              <div className="host-name">{currentAppart.host.name}</div>
               <img
                 src={`${currentAppart.host.picture}`}
                 alt="{currentAppart.host.name}"
               />
             </div>
             <div className="rating">
-              <img src="/star.png" alt="étoile" />
-              <img src="/star.png" alt="étoile" />
-              <img src="/star.png" alt="étoile" />
-              <img src="/star.png" alt="étoile" />
-              <img src="/star.png" alt="étoile" />
-            </div>
+            
+              <img className="star" id="1" src="/starColored.png"  alt="étoile" />
+              <img className="star" id="2" src="/star.png" alt="étoile" />
+              <img className="star" id="3" src="/star.png" alt="étoile" />
+              <img className="star" id="4" src="/star.png" alt="étoile" />
+              <img className="star" id="5" src="/star.png" alt="étoile" />
+            </div> 
           </div>
         </div>
         <div className="collapses">
