@@ -1,6 +1,6 @@
 .navigation {
   /* border: 2px solid coral; */
-  width: 35%;
+  min-width: 35%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,17 +9,24 @@
   font-size: 1.5rem;
   color: var(--primary-color);
   text-decoration: none;
-  
-  
+  padding: 0 10px;
 }
 .navigation a.active {
   text-decoration: underline;
 }
-@media (max-width:750px) {
-  .text-nav{font-size: 1.2rem; } 
-  .navigation {width: 60%;}
+@media (max-width: 750px) {
+  .text-nav {
+    font-size: 1.2rem;
+  }
+  .navigation {
+    width: 60%;
+  }
 }
-@media (max-width:400px) {
-  .navigation {width: 60%;}
-  .text-nav{font-size: 0.8rem; } 
+@media (max-width: 400px) {
+  .navigation {
+    width: 60%;
+  }
+  .text-nav {
+    font-size: 0.8rem;
+  }
 }

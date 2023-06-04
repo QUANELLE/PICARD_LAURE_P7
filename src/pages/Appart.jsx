@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import logements from "../assets/logements.json";
 import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
+import Stars from "../components/Stars";
 
 export default function Appart() {
   // Récupération du choix de l'appartement
@@ -14,12 +15,15 @@ export default function Appart() {
   const listPictures = currentAppart.pictures;
   // console.log('listPictures:', listPictures);
   const listTags = currentAppart.tags.map((tag, index) => (
-    <div key={index}>{tag}</div>
+    <div className="tag" key={index}>{tag}</div>
   ));
   const listEquipments = currentAppart.equipments.map((equipement, index) => (
     <div key={index}>{equipement}</div>
   ));
 
+  // Gestion des étoiles
+  const rating=currentAppart.rating  
+    
   return (
     <div className="page-container">
       <div className="appart">
@@ -43,12 +47,10 @@ export default function Appart() {
               />
             </div>
             <div className="rating">
-            
-              <img className="star" id="1" src="/starColored.png"  alt="étoile" />
-              <img className="star" id="2" src="/star.png" alt="étoile" />
-              <img className="star" id="3" src="/star.png" alt="étoile" />
-              <img className="star" id="4" src="/star.png" alt="étoile" />
-              <img className="star" id="5" src="/star.png" alt="étoile" />
+            <Stars
+            rating={rating}
+              />
+              
             </div> 
           </div>
         </div>

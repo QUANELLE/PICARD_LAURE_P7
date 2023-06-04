@@ -22,14 +22,15 @@
   max-width: 60%;
   color: var(--primary-color);
   font-size: 1.5rem;
+  margin-top: 10px;
 }
-.tags div {
+.tag {
   display: flex;
   align-items: center;
-  border-radius: 10%;
+  border-radius: 10px;
   background-color: var(--primary-color);
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 7px 15px;
   color: var(--text-color);
   font-size: small;
   margin-top: 5px;
@@ -37,8 +38,7 @@
 .appart-host {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-    justify-content: center; */
+  
 }
 .host {
   display: flex;
@@ -52,6 +52,10 @@
   border-radius: 50%;
   padding: 20px;
 }
+.star {
+  height: 40px;
+  margin: 3px;
+  }
 @media (max-width:750px) {
   .appart-infos {
     flex-direction: column;
@@ -66,27 +70,42 @@
   .appart-tittle{
     max-width: 100%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 30px;
   }
   .tags{
     justify-content: flex-start;
+    margin-top: 15px;
   }
+  .host img{
+    width: 70%;
+  }
+  .star {
+    height: 30px;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .host img{
     width: 50%;
   }
   .host{
     justify-content: flex-end;
   }
-  .rating img{
-    width: 15%;
-  }
+  
+  .star {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    }
+    .rating{
+      min-width: 30%;
+    }
 }
 @media (max-width: 400px){
-  .tags div{
+  .tag{
     font-size: 0.5rem;
+    justify-content: center;
   }
   .host img{
     min-width: 80px;
@@ -96,13 +115,5 @@
     max-width: 60%;
     padding: 0;
   }
-}
-.star-colored {
-color: var(--text-color);
-background-color: #14b811;
-}
-#1 {
-font-size: 50px;
-height: 40px;
-color: green;
+  
 }

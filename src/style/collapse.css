@@ -31,7 +31,6 @@
   font-size: small;
   background-color: #fff;
   color: var(--primary-color);
-  /* flex-grow: 1; */
 }
 .collapse-text-open {
   display: flex;
