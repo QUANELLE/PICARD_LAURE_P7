@@ -18,13 +18,12 @@ export default function Carousel({ pictures}) {
 
   const StyleCarousel = styled.div`
     background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(${pictures[currentIndex]}) center/cover;
-    border: solid 1px rgb(255, 64, 0);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     border-radius: 25px;
     position: relative;
   `;
-  // console.log('index photo', currentIndex);
+  
   return (
     <StyleCarousel>
       <img

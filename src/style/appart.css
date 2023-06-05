@@ -27,6 +27,7 @@
 .tag {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   border-radius: 10px;
   background-color: var(--primary-color);
   font-size: 1.5rem;
@@ -34,6 +35,7 @@
   color: var(--text-color);
   font-size: small;
   margin-top: 5px;
+  min-width: 10vw;
 }
 .appart-host {
   display: flex;
@@ -71,7 +73,6 @@
     max-width: 100%;
     text-align: left;
     font-size: 1.2rem;
-    margin: 30px;
   }
   .tags{
     justify-content: flex-start;

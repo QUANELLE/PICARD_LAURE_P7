@@ -11,3 +11,7 @@
   max-width: 30%;
   object-fit: contain;
 }
+@media (max-width:500px){
+  .logo{max-width: 25%;}
+  .header{margin: 0;}
+}
