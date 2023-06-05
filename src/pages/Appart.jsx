@@ -11,7 +11,8 @@ export default function Appart() {
   // Récupération du choix de l'appartement
   const param = useParams();
   let currentAppart = logements.find((logement) => param.id === logement.id);
-
+  
+// retour vers page erreur si faux id dans l'url 
   if (!currentAppart) {
     return <Error />;
     
