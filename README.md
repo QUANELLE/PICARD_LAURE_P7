@@ -10,7 +10,7 @@ My Frontend files are in the "src" folder.
 
 ### Prerequisites
 
-You will need to have Node and npm installed locally on your machine.
+You will need to have Node, npm and yarn installed locally on your machine.
 
 ### Installation
 

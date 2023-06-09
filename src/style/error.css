@@ -1,20 +1,16 @@
 .error {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid rgb(88, 95, 108);      */
   margin: auto;
   padding: 20px;
 }
 .chiffre {
   font-weight: 700;
-  /* font-size: 12rem; */
   font-size: 15vw;
   color: var(--primary-color);
 }
 .text-erreur {
   font-size: 2rem;
-  /* font-size: 3vw; */
-  /* font-size: min(5vw,30px); */
   color: var(--primary-color);
 }
 

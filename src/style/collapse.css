@@ -47,13 +47,12 @@
   justify-content: space-evenly;
   width: 100%;
 }
-@media (max-width:750px) {
-  .collapses{
+@media (max-width: 750px) {
+  .collapses {
     flex-direction: column;
     align-items: center;
   }
-  .collapse  {
-    
+  .collapse {
     width: 100%;
   }
 }

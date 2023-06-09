@@ -27,14 +27,13 @@ export default function Appart() {
       <div key={index}>{equipement}</div>
     ));
 
-    // Gestion des étoiles
+    // Constante pour gestion des étoiles
     const rating = currentAppart.rating;
 
     return (
       <div className="page-container">
         <div className="appart">
           <Carousel
-            cover={currentAppart.cover}
             pictures={currentAppart.pictures}
           />
           <div className="appart-infos">
