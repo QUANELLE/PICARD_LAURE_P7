@@ -19,6 +19,7 @@ export default function Card({ id, title, cover }) {
     position: relative;
     padding: 5px;
     min-width: 30%;
+    cursor:pointer;
   `;
 
   // redirection vers la page de l'appartement cliqué

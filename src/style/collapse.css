@@ -21,6 +21,7 @@
   background: var(--primary-color);
   border: none;
   margin: 5px;
+  cursor: pointer;
 }
 .transformation-fleche {
   transform: rotate(180deg);
