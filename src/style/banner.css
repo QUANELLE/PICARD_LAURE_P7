@@ -12,10 +12,10 @@
 }
 .banner-home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url("/src/assets/home.png");
+    url("../assets/home.png");
 }
 .banner-about {
-  background-image: url("/src/assets/AboutIMG.png");
+  background-image: url("../assets/AboutIMG.png");
   width: 80vw;
 }
 .text-about {

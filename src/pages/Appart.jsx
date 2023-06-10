@@ -11,11 +11,10 @@ export default function Appart() {
   // Récupération du choix de l'appartement
   const param = useParams();
   let currentAppart = logements.find((logement) => param.id === logement.id);
-  
-// retour vers page erreur si faux id dans l'url 
+
+  // retour vers page erreur si faux id dans l'url
   if (!currentAppart) {
     return <Error />;
-    
   } else {
     // Mise en constante des différentes listes de données utiles
     const listTags = currentAppart.tags.map((tag, index) => (
@@ -33,9 +32,7 @@ export default function Appart() {
     return (
       <div className="page-container">
         <div className="appart">
-          <Carousel
-            pictures={currentAppart.pictures}
-          />
+          <Carousel pictures={currentAppart.pictures} />
           <div className="appart-infos">
             <div className="appart-tittle">
               <h3>{currentAppart.title} </h3>

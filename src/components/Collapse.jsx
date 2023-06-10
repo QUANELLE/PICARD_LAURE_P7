@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../style/collapse.css";
+import FlecheHaut from '../assets/flecheHautCollapse.png'
 
 export default function Collapse({ description, titre }) {
   const [toggle, setToggle] = useState(true);
@@ -16,13 +17,13 @@ export default function Collapse({ description, titre }) {
         {titre}
         <button onClick={changeState}>
           <img
-            className={toggle && flecheBas}
-            src="/flecheHautCollapse.png"
+            className={`${toggle && flecheBas}`}
+            src={FlecheHaut}
             alt="fleche ouvrante et fermante"
           />
         </button>
       </div>
-      <div className={toggle ? collapseClosed : collapseOpen}>
+      <div className={`${toggle ? collapseClosed : collapseOpen}`}>
         {description}
       </div>
     </div>

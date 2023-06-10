@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../style/carousel.css";
 import styled from "styled-components";
+import FlecheDroite from '../assets/flecheDroite.png'
+import FlecheGauche from '../assets/flecheGauche.png'
 
 // création d'un styled Component pour intégrer les images dynamiquement
 
@@ -33,13 +35,13 @@ export default function Carousel({ pictures}) {
         onClick={prevImg}
         // Disparition des fléches si une seule img
         className={`${nbPictures!= 1? "fleche":"fleche-none"} fleche-gauche`} 
-        src="/flecheGauche.png"
+        src={FlecheGauche}
         alt="retour image précédente"
       />
       <img
         onClick={nextImg}
         className={`${nbPictures!= 1? "fleche":"fleche-none"} fleche-droite`}
-        src="/flecheDroite.png"
+        src={FlecheDroite}
         alt="aller image suivante"
       />
       <div className="compteur">{currentIndex+1}/{nbPictures} </div>
