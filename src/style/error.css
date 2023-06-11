@@ -21,4 +21,5 @@
   color: var(--primary-color);
   border: none;
   background: none;
+  cursor: pointer;
 }
