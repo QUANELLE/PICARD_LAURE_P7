@@ -52,7 +52,7 @@ export default function Carousel({ pictures }) {
         alt="aller image suivante"
       />
       <div className="compteur">
-        {currentIndex + 1}/{nbPictures}{" "}
+        {currentIndex + 1}/{nbPictures}
       </div>
     </StyleCarousel>
   );
