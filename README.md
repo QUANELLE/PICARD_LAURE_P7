@@ -10,19 +10,23 @@ My Frontend files are in the "src" folder.
 
 ### Prerequisites
 
-You will need to have Node, npm and yarn installed locally on your machine.
+You will need to have Node, npm and yarn installed locally on your machine.  
+- [Node](https://nodejs.org/en)  
+- [npm](https://www.npmjs.com/)  
+- [yarn](https://yarnpkg.com/getting-started/install)
+
+
+
 
 ### Installation
 
-Clone this repo. From within the project folder, run npm install. You can then run the server with node server. The server should run on localhost with default port 3000. 
+Clone this repo. From within the project folder, run yarn install. You can then run the server with node server. The server should run on localhost with default port 3000. 
 
 
-<!-- ## Available Scripts
+## Run 
 
-In the project directory, you can run:
-
-### `yarn start`
+ yarn start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
- -->
+
