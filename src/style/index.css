@@ -1,12 +1,11 @@
-*,::after,::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-:root{
-  --primary-color:#ff6060;
-  --text-color:#FFFFFF;
+:root {
+  --primary-color: #ff6060;
+  --text-color: #ffffff;
 }
-
-
-

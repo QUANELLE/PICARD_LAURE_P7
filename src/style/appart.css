@@ -40,7 +40,6 @@
 .appart-host {
   display: flex;
   flex-direction: column;
-  
 }
 .host {
   display: flex;
@@ -57,66 +56,65 @@
 .star {
   height: 40px;
   margin: 3px;
-  }
-@media (max-width:750px) {
+}
+@media (max-width: 750px) {
   .appart-infos {
     flex-direction: column;
     align-items: flex-start;
   }
-  .appart-host{
+  .appart-host {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     width: 100%;
   }
-  .appart-tittle{
+  .appart-tittle {
     max-width: 100%;
     text-align: left;
     font-size: 1.2rem;
   }
-  .tags{
+  .tags {
     justify-content: flex-start;
     margin-top: 15px;
   }
-  .host img{
+  .host img {
     width: 70%;
   }
   .star {
     height: 30px;
-    }
+  }
 }
 
 @media (max-width: 560px) {
-  .host img{
+  .host img {
     width: 50%;
   }
-  .host{
+  .host {
     justify-content: flex-end;
   }
-  .tag{
+  .tag {
     padding: 7px;
   }
   .star {
     height: 20px;
     width: 20px;
     margin: 0;
-    }
-    .rating{
-      min-width: 30%;
-    }
+  }
+  .rating {
+    min-width: 30%;
+  }
 }
-@media (max-width: 400px){
-  .tag{
+@media (max-width: 400px) {
+  .tag {
     font-size: 0.5rem;
     justify-content: center;
   }
-  .host img{
+  .host img {
     min-width: 80px;
   }
-  .host{
+  .host {
     font-size: 1rem;
     max-width: 60%;
     padding: 0;
   }
-  
 }

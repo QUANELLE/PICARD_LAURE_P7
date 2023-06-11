@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/collapse.css";
-import FlecheHaut from '../assets/flecheHautCollapse.png'
+import FlecheHaut from "../assets/flecheHautCollapse.png";
 
 export default function Collapse({ description, titre }) {
   const [toggle, setToggle] = useState(true);

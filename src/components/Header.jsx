@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/header.css";
 import Navigation from "./Navigation";
-import Logo from '../assets/Logo.png'
+import Logo from "../assets/Logo.png";
 
 export default function Header() {
   return (

@@ -11,10 +11,10 @@
 .fleche-droite {
   right: 0%;
 }
-.fleche-none{
+.fleche-none {
   display: none;
 }
-.compteur{
+.compteur {
   position: absolute;
   left: 50%;
   bottom: 0%;
